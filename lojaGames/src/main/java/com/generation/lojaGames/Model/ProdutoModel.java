@@ -35,6 +35,10 @@ public class ProdutoModel {
 	@JsonIgnoreProperties("produto")
 	private CategoriaModel categoria;
 	
+	@ManyToOne
+	@JsonIgnoreProperties("produto")
+	private UsuarioModel usuario;
+	
 	public int getClassificacao() {
 		return classificacao;
 	}
